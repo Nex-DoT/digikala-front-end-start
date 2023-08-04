@@ -5,6 +5,9 @@
     url('./fonts/vazir.woff') format('woff'),
     url('./fonts/vazir.woff2') format('woff2');
 }
+html{
+    scroll-behavior: smooth
+}
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100&display=swap');
 *{
     margin: 0;
@@ -328,6 +331,10 @@ main .items ul li img{
     padding: 10px;
     box-shadow: 0px 0px 5px 1px #8080808f;
 }
+.scrollproduct .boxCard p{
+    color: red;
+    padding:15px;
+}
 .scrollproduct .boxCard img{
     width: 200px;
     height: 200px;
@@ -344,4 +351,76 @@ main .items ul li img{
     width: 5px;
     background-color: gray;
     border-radius: 5px;
+}
+footer{
+    width: 100%;
+    background-color: #ffffff;
+    margin: 30px 0;
+    position: relative;
+    font-size: 12px;
+}
+footer .icons{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+footer .icons ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 90%;
+}
+footer .icons ul li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.btnForBackToTop{
+    position: absolute;
+    left: 30px;
+    top:0;
+    width: 120px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.info{
+    color: gray;
+    padding-right: 30px;
+}
+.info p{
+    margin: 15px 0;
+}
+.btnForBackToTop a{
+    text-decoration: none;
+    color: black;
+}
+footer .text{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    font-size: 15px;
+    margin-top: 50px;
+}
+ul{
+    list-style: none;
+}
+li h4{
+    font-size: 17px;
+    color: black;
+    margin-bottom: 10px;
+}
+.text li{
+    font-size: 15px;
+    color: gray;
+    margin: 5px 0;
 }
