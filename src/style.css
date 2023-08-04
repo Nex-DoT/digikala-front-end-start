@@ -223,3 +223,125 @@ main .items ul li img{
     border: none;
     cursor: pointer;
 }
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 150px;
+}
+.options img{
+    width: 50px;
+}
+.gridman{
+    gap: 5px;
+    display: grid;
+    grid-template-areas: 
+    "a a b b b b"
+    "d d d d c c"
+    "m m m m m m"
+    "e e f f f f"
+    "h h h h g g"
+    ;
+}
+.m{
+    height: 420px;
+    width: 100%;
+    background-color: skyblue;
+    border-radius: 5px;
+    margin: 20px 0;
+    grid-area: m;
+    display: flex;
+    align-items: center;
+}
+.a{
+    grid-area: a;
+    height: 328px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.b{
+    grid-area: b;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.d{
+    border-radius: 5px;
+    grid-area: d;
+    cursor: pointer;
+}
+.c{
+    border-radius: 5px;
+    grid-area: c;
+    height: 328px;
+    cursor: pointer;
+}
+.e{
+    border-radius: 5px;
+    grid-area: e;
+    height: 328px;
+    cursor: pointer;
+}
+.f{
+    border-radius: 5px;
+    grid-area: f;
+    cursor: pointer;
+}
+.h{
+    border-radius: 5px;
+    grid-area: h;
+    cursor: pointer;
+}
+.g{
+    grid-area: g;
+    border-radius: 5px;
+    height: 328px;
+    cursor: pointer;
+}
+.offerimg{
+    border-left: 1px solid #8080807d;
+    width: 25%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+.scrollproduct{
+    display: flex;
+    align-items: center;
+    width: 920;
+    overflow-x: scroll;
+    height: 400px;
+    border-radius: 5px;
+}
+.scrollproduct .boxCard{
+    width: 600px;
+    height: 320px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 0px 0px 5px 1px #8080808f;
+}
+.scrollproduct .boxCard img{
+    width: 200px;
+    height: 200px;
+    margin-top: 20;
+}
+::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+}
+::-webkit-scrollbar-track{
+    background-color: #8080807f;
+}
+::-webkit-scrollbar-thumb{
+    width: 5px;
+    background-color: gray;
+    border-radius: 5px;
+}
