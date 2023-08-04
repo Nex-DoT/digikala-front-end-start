@@ -89,7 +89,7 @@ menu{
     padding: 10px 50px ;
     font-size: 12px;
 }
-menu div ul{
+menu div .ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -97,14 +97,14 @@ menu div ul{
     width: 700px;
     position: relative;
 }
-menu div ul li{
+menu div .ul li{
     display: flex;
     align-items: center;
     justify-content: center;
     color: gray;
     cursor: pointer;
 }
-menu div ul li:nth-child(2):before{
+menu div .ul li:nth-child(2):before{
     position: absolute;
     content: "";
     width: 20px;
@@ -112,7 +112,7 @@ menu div ul li:nth-child(2):before{
     border-left: 1px solid #808080a8;
     right:110 ;
 }
-menu div ul li:nth-child(3):after{
+menu div .ul li:nth-child(3):after{
     position: absolute;
     content: "";
     width: 20px;
@@ -120,11 +120,11 @@ menu div ul li:nth-child(3):after{
     border-left: 1px solid #808080a8;
     right:495 ;
 }
-menu div ul li i{
+menu div .ul li i{
     margin: 5px;
     color: gray;
 }
-menu div ul li:first-child , menu div ul li:first-child i{
+menu div .ul li:first-child , menu div .ul li:first-child i{
     color: black;
     font-size: 15px;
     font-weight: bold;
@@ -423,4 +423,37 @@ li h4{
     font-size: 15px;
     color: gray;
     margin: 5px 0;
+}
+.shadow{
+    position: absolute;
+    top: 24;
+    left: -900;
+    z-index: 200;
+    width: 1800px;
+    height: 100vh;
+    background-color: #555555c7;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    display: none;
+    opacity: 0;
+}
+.list{
+    position: absolute;
+    top: 0;
+    width: 78%;
+    height: 60%;
+    background-color: #ffffff;
+    z-index: 100;
+    border-radius:  0 0 10px 10px;
+}
+.hoverman:hover .shadow{
+    opacity: 1;
+    display: flex;
+}
+.list ul{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
 }
